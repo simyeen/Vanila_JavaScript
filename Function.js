@@ -13,7 +13,17 @@ function book() {
 book();
 
 var result = book2();
-
+debugger;
 function book2() {
   return "호이스팅";
 }
+debugger;
+
+var obj = { point: 100 };
+obj.getPoint = function () {
+  return this.point;
+};
+debugger;
+obj.getPoint();
+
+debugger;
