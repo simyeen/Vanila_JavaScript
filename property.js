@@ -4,3 +4,4 @@ console.log(result[item]);
 
 const k = [a, (b = a + 20), (c = b + 50)];
 console.log(k);
+
