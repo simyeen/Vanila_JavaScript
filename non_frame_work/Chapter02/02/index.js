@@ -15,6 +15,7 @@ const state = {
 };
 
 window.requestAnimationFrame(() => {
+  console.log(registry);
   const main = document.querySelector(".todoapp");
   const newMain = registry.renderRoot(main, state);
   main.replaceWith(newMain);
