@@ -34,6 +34,11 @@ const applyDiff = (parentNode, realNode, virtualNode) => {
     return;
   }
 
+  if (!realNode && virtualNode) {
+    parentNode.appendChild(virtualNode);
+    return;
+  }
+
   if (!isNodeChanged(virtualNode, realNode)) {
     realNode.replaceWith(virtualNode);
     return;

@@ -24,9 +24,9 @@ const render = () => {
   });
 };
 
-window.setInterval(() => {
-  state.todos = getTodos();
-  render();
-}, 1000);
+// window.setInterval(() => {
+//   state.todos = getTodos();
+//   render();
+// }, 1000);
 
 render(); //초기 렌더링
